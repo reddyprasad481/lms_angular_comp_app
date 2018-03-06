@@ -1,0 +1,20 @@
+npm install -g yo grunt-cli bower -->install Yeoman, Grunt and Bower
+npm install -g generator-angular -->nstall the AngularJS generator
+yo angular <App name> -->Yeoman will create your files and folders, then it will run bower install 
+bower install angular-bootstrap --save --> install bootstrap  CSS
+
+https://github.com/yeoman/generator-angular
+https://www.sitepoint.com/kickstart-your-angularjs-development-with-yeoman-grunt-and-bower/
+https://www.sitepoint.com/5-minutes-to-min-safe-angular-code-with-grunt/
+
+https://www.toptal.com/angular-js/your-first-angularjs-app-part-2-scaffolding-building-and-testing
+
+
+You can see available generators via npm search yeoman-generator or via http://
+yeoman.io/generators/.
+Install them with npm install generator-karma:app.
+
+To see all your installed generators run yo without any arguments. Adding the -
+help option will also show subgenerators.
+
+If yo cannot find the generator, run yo doctor to troubleshoot your system.
