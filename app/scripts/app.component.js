@@ -3,12 +3,12 @@ angular
   .module('lmsApp')
   	.component('appComponent',{
   		template:'<header-component></header-component>\n'+
-      '<div>LMSApp</div><nav>\n' +
+      '<nav>\n' +
     	'<ng-outlet></ng-outlet><footer-component></footer-component>\n',
     	controller:AppController,
     	$routeConfig: [
-    		{path: '/leaveRequests', name: 'LeaveRequests', component: 'leaveRequestsComponent', useAsDefault: true},
-    		{path: '/approve', name: 'Approve', component: 'approveComponent' }
+    		{path: '/leaveRequests/...', name: 'LeaveRequests', component: 'leaveRequestsComponent', useAsDefault: true},
+    		{path: '/approve/...', name: 'Approve', component: 'approveComponent' }
   		]
   	});
 
