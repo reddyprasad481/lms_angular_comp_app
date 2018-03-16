@@ -3,6 +3,10 @@
     	<a ng-link="['Approve']">Approve View</a>
     	</nav> -->
     
-<form id='pdfForm'></form>
+<form id='pdfForm'>
+ <input type="hidden" name="period" id="period"/>
+  <input type="hidden" name="fromDate" id="fromDate"/>
+<input type="hidden" name="toDate" id="toDate"/>
+</form>
 <button ng-click="$ctrl.printPdf()" type="button" >Print PDF</button>
 <footer> greddi@prokarma.com</footer>

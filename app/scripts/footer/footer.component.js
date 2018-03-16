@@ -24,14 +24,16 @@ angular.module('footer')
           this.printPdf = function() {
             
               var pdfForm = document.getElementById('pdfForm');
-              
+              document.getElementById('period').value="2 Months";
+               document.getElementById('fromDate').value="12/03/1990";
+               document.getElementById('toDate').value="03/02/1996";
               pdfForm.action ='http://localhost:8080/spring_rest_services/service/customers/getpdfForInput';
                   
              pdfForm.method='POST';
               //pdfForm.body =99;//$ctrl.pdfData.data;
               console.log($ctrl.pdfData.data);
               pdfForm.submit();
-
+//http://localhost:8080/spring_rest_services/service/customers/getpdf?period=6years&fromDate=12/03/1990&toDate=03/02/1996 --FOR Get
           };
 	}
 
